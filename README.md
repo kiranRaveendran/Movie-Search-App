@@ -14,4 +14,4 @@ HTML, CSS, JavaScript
 OMDb API for fetching movie data
 
 
-![Movie search app home](https://github.com/user-attachments/assets/e682eab8-d758-4613-a46e-40a0e563f0cf)
+![image](https://github.com/user-attachments/assets/0004ab51-7dd3-46a9-b369-a074de39fad6)
