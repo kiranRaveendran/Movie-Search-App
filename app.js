@@ -51,7 +51,7 @@ const renderMovies = (movies) => {
     .map(
       (movie) => `
       <div class="bg-white rounded shadow p-4">
-        <img src="${movie.Poster}" alt="${movie.Title}" class="w-full h-48 object-cover rounded">
+        <img src="${movie.Poster}" alt="${movie.Title}" class="w-full h-32 object-cover rounded">
         <h3 class="text-lg font-bold mt-2">${movie.Title}</h3>
         <p>${movie.Year}</p>
       </div>`
