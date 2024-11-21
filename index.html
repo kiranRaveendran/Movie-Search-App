@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Search App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+
+  </head>
+  <body class="bg-gray-100 min-h-screen flex flex-col">
+    <header class="bg-cyan-900	 text-white p-4">
+      <h1 class="text-2xl font-bold text-center text-9xl font-thin	">Movie <span class="text-5xl">Search App</span> </h1> 
+    </header>
+    <main class="container mx-auto p-4 flex flex-col justify-center items-center">
+      <div class="mb-4 w-full flex justify-center items-center pt-10">
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Search movies..."
+          class="w-4/12 p-2 border rounded"
+        />
+      </div>
+      <div id="loadingSpinner" class="text-center hidden">
+        <div class="loader"></div>
+        <p>Loading...</p>
+      </div>
+      <div
+        id="moviesContainer"
+        class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4"
+      ></div>
+      <div id="pagination" class="mt-4 text-center">
+        <button
+          id="prevBtn"
+          class="px-4 py-2 bg-gray-500 text-white rounded disabled:opacity-50"
+        >
+          Previous
+        </button>
+        <button
+          id="nextBtn"
+          class="px-4 py-2 bg-gray-500 text-white rounded disabled:opacity-50"
+        >
+          Next
+        </button>
+      </div>
+    </main>
+  </body>
+  <script src="app.js"></script>
+</html>
